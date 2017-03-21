@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  @client_id = ENV["client_id"]
+
   def self.from_github(data, access_token)
     user          = User.find_or_create_by(uid: data['id'], provider: 'github')
     user.username = data['login']
