@@ -9,6 +9,31 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+          </button>
+          <img src="/assets/GitHub-Mark.png" height=50 width=50 />
+          <a class="navbar-brand" href="#">APIcurious</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/dashboard">Dashboard</a></li>
+            <%- unless current_user == nil -%>
+              <li><%= link_to "Log out", logout_path, method: :delete %> </li>
+            <%- else -%>
+              <li><%= link_to "Log In", root_path %> </li>
+            <%- end -%>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
     <%= yield %>
   </body>
 </html>
