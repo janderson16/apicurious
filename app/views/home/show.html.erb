@@ -4,8 +4,59 @@
     <div class="col-md-2"></div>
     <div class="col-md-8">
       <h1 class="home">Welcome to APIcurious</h1>
-      <%= link_to "Login with Github", "http://github.com/login/oauth/authorize?client_id=#{Figaro.env.client_id}&scope=repo", class: "btn btn-lg btn-default btn-home" %>
     </div>
     <div class="col-md-2"></div>
   </div>
 </body>
+
+<!DOCTYPE html>
+<html>
+<!-- <body background="/images/wallpaper.jpg"> -->
+<body background="http://more-sky.com/data/out/7/IMG_202152.jpg">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsrtap Free Admin Template - SIMINTA | Admin Dashboad Template</title>
+    <!-- Core CSS - Include with every page -->
+    <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
+   <link href="assets/css/style.css" rel="stylesheet" />
+      <link href="assets/css/main-style.css" rel="stylesheet" />
+
+</head>
+
+<body class="body-Login-back">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center logo-margin ">
+              <img src="public/curious-george.jpg" alt=""/>
+                </div>
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Please Sign In</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <%= link_to '<i class="fa fa-github"></i> Login with Github'.html_safe, "http://github.com/login/oauth/authorize?client_id=#{Figaro.env.client_id}&scope=repo", class: "btn btn-block btn-social btn-lg btn-github" %>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Core Scripts - Include with every page -->
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+</body>
+
+</html>

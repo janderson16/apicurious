@@ -23,6 +23,10 @@ gem 'coffee-rails', '~> 4.2'
 gem 'pry'
 gem 'faraday'
 gem 'figaro'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-social-rails'
+gem 'font-awesome-rails'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

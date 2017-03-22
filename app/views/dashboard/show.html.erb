@@ -1,13 +1,13 @@
 <div class="container-fluid container-home">
   <div class="col-md-2"></div>
   <div class="col-md-8">
-    <h1 class="home">You Are APIcurious</h1>
+    <h1 class="home">You Are APIcurious about GitHub</h1>
     <%= image_tag current_user.image, class: "img-circle img-thumbnail home-image" %>
     <h2 class="home"> <%= current_user.username %> </h2>
     <h2 class="home"> <%= current_user.email %> </h2>
+    <h2 class="home"> <%= link_to "My Repos", "/#{current_user.username}/repos" %></h2>
     <h2 class="home"> <%= link_to "My Recent Commits" %> </h2>
     <h2 class="home"> <%= link_to "My Organizations", "/#{current_user.username}/organizations"%> </h2>
-    <h2 class="home"> <%= link_to "My Repos", "/#{current_user.username}/repos" %></h2>
     <h2 class="home"> <%= link_to "Starred Repos" %></h2>
     <h2 class="home"> <%= link_to "Following: #{ current_user.following}", "/#{current_user.username}/following" %></h2>
     <h2 class="home"> <%= link_to "Followers: #{current_user.followers}", "/#{current_user.username}/followers" %> </h2>
@@ -17,4 +17,3 @@
   </div>
   <div class="col-md-2"></div>
 </div>
-<%#=  @github_user.repos.name %>
