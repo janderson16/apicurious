@@ -1,4 +1,4 @@
-class FollowersController < ApplicationController
+class User::FollowersController < ApplicationController
   before_action :authorize!
 
   def index
