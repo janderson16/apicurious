@@ -7,12 +7,12 @@ class User < ActiveRecord::Base
     user.token    = access_token
     user.email    = data['email']
     user.image    = data['avatar_url']
-    user.followers = data['followers_url']
-    user.following = data['following_url']
+    user.followers = data['followers']
+    user.following = data['following']
     user.repos = data['repos_url']
     user.public_repos = data['public_repos']
     user.starred  = data['starred_url']
-
+    # binding.pry
     user.save
 
     return user

@@ -16,9 +16,6 @@ class GithubOauth
   def data
     oauth_response = Faraday.get("https://api.github.com/user?access_token=#{@access_token}")
     data           = JSON.parse(oauth_response.body)
-    # binding.pry
     data
   end
-
-
 end
