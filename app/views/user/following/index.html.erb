@@ -8,7 +8,7 @@
         <li><%= link_to "Starred Repos", "/#{current_user.username}/starred" %></a></li>
         <li><%= link_to "Followers: #{current_user.followers}", "/#{current_user.username}/followers" %></a></li>
         <li><%= link_to "Following: #{ current_user.following}", "/#{current_user.username}/following" %></a></li>
-        <li><%= link_to "Their recent activity", "/#{current_user.username}/following_commits"%></a></li>
+        <li><%= link_to "Their recent activity", "/#{current_user.username}/received_events"%></a></li>
       </ul>
     </div>
     <div class="col-md-4 col-md-offset-2 main">
