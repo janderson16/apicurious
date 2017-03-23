@@ -6,6 +6,4 @@ class Event < OpenStruct
       Event.new(event)
     end
   end
-
-  
 end

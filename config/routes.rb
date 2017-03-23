@@ -11,6 +11,6 @@ Rails.application.routes.draw do
     get '/starred', to: 'starred_repos#index'
     get '/followers', to: 'followers#index'
     get '/following', to: 'following#index'
-    get '/following_events', to: 'events#show'
+    get '/received_events', to: 'received_events#index'
   end
 end

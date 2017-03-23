@@ -31,4 +31,6 @@
 <% @ppl_following.each do |person| %>
 <%= person.login %>
 <%= image_tag person.avatar_url, class: "img-circle img-thumbnail home-image" %>
+<%= binding.pry %>
+<%= person.events %>
 <% end %>
