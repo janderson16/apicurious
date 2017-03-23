@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  validates :username, :email, :image, presence: true
   @client_id = ENV["client_id"]
 
   def self.from_github(data, access_token)

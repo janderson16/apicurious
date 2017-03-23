@@ -47,6 +47,10 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
   gem 'simplecov', :require => false, :group => :test
+  gem 'vcr'
+  gem 'webmock'
+  gem 'capybara'
+  gem 'launchy'
 end
 
 group :development do
