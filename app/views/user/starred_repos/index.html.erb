@@ -12,7 +12,7 @@
       </ul>
     </div>
     <div class="col-md-4 col-md-offset-2 main">
-      <h1>My Repos</h1>
+      <h1>My Starred Repos</h1>
     </div>
   </div>
 <div class="row">
@@ -23,10 +23,11 @@
   <div class="col-md-1 main">
   </div>
   <div class="col-md-11 main">
-    <h4>Total Repos: <%= @repos.count %></h4>
+    <h4>Total Starred Repos: <%= @starred.count %></h4>
   </div>
 </div>
 <div class="row">
-  <% @repos.each do |repo| %>
-  <%= repo.name %><br>
-  <% end %>
+
+<% @starred.each do |star| %>
+Repo Name: <%= star.name %>
+<% end %>

@@ -12,7 +12,7 @@
       </ul>
     </div>
     <div class="col-md-4 col-md-offset-2 main">
-      <h1>My Repos</h1>
+      <h1>My Organizations</h1>
     </div>
   </div>
 <div class="row">
@@ -23,10 +23,12 @@
   <div class="col-md-1 main">
   </div>
   <div class="col-md-11 main">
-    <h4>Total Repos: <%= @repos.count %></h4>
+    <h4>Total Organizations I'm In: <%= @orgs.count %></h4>
   </div>
 </div>
 <div class="row">
-  <% @repos.each do |repo| %>
-  <%= repo.name %><br>
-  <% end %>
+
+<% @orgs.each do |org| %>
+<%= org.login %>
+<%= image_tag person.avatar_url, class: "img-circle img-thumbnail home-image" %>
+<% end %>

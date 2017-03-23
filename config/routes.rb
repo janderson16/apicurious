@@ -8,9 +8,12 @@ Rails.application.routes.draw do
   # get '/repos', to: 'repos#index'
 
   namespace :user, path: ':user' do
+    get '/repos', to: 'repos#index'
+    get '/commits', to: 'commits#index'
+    get '/organizations', to: 'organizations#index'
+    get '/starred', to: 'starred_repos#index'
     get '/followers', to: 'followers#index'
     get '/following', to: 'following#index'
-    get '/repos', to: 'repos#index'
-    get '/organizations', to: 'organizations#index'
+    get '/following_commits', to: 'commits#show'
   end
 end

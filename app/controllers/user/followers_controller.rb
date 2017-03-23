@@ -2,8 +2,6 @@ class User::FollowersController < ApplicationController
   before_action :authorize!
 
   def index
-    response = Faraday.get("https://api.github.com/users/janderson16/followers")
-    # binding.pry
-    @followers = JSON.parse(response.body)
+    @followers = Follower.all(current_user)
   end
 end
