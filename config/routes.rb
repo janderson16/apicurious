@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   namespace :user, path: ':user' do
     get '/repos', to: 'repos#index'
-    get '/commits', to: 'commits#index'
+    get '/events', to: 'events#index'
     get '/organizations', to: 'organizations#index'
     get '/starred', to: 'starred_repos#index'
     get '/followers', to: 'followers#index'

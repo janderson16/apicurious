@@ -28,7 +28,10 @@ attr_reader :connection, :auth, :current_user
     parse(connection.get("users/#{current_user.username}/orgs#{auth}"))
   end
 
-
+  def events
+    parse(connection.get("users/#{current_user.username}/events#{auth}"))
+  end
+  
   private
 
   def parse(response)
