@@ -12,9 +12,8 @@ class User < ActiveRecord::Base
     user.repos = data['repos_url']
     user.public_repos = data['public_repos']
     user.starred  = data['starred_url']
-    # binding.pry
-    user.save
 
+    user.save
     return user
   end
 end

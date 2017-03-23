@@ -3,6 +3,5 @@ class User::FollowingController < ApplicationController
 
   def index
     @ppl_following = Following.all(current_user)
-    # binding.pry
   end
 end

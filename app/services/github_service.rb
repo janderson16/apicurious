@@ -2,7 +2,6 @@ class GithubService
 attr_reader :connection, :auth, :current_user
 
   def initialize(current_user)
-    # binding.pry
     @connection = Faraday.new('https://api.github.com/')
     @auth = "?client_id=#{ENV["client_id"]}&client_secret=#{ENV["client_secret"]}"
     @current_user = current_user
