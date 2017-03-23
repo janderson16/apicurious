@@ -43,7 +43,7 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         null,
@@ -60,6 +60,17 @@
         null,
         null
       ],
+      "/Users/jamesanderson/Turing/mod_3/apicurious/app/models/received_event.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        30,
+        null,
+        null,
+        null
+      ],
       "/Users/jamesanderson/Turing/mod_3/apicurious/app/models/repository.rb": [
         1,
         null,
@@ -67,6 +78,17 @@
         1,
         1,
         21,
+        null,
+        null,
+        null
+      ],
+      "/Users/jamesanderson/Turing/mod_3/apicurious/app/models/starred_repo.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null
@@ -98,9 +120,9 @@
         1,
         null,
         1,
-        14,
-        14,
-        14,
+        17,
+        17,
+        17,
         null,
         null,
         1,
@@ -116,7 +138,7 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
@@ -128,13 +150,13 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
         null,
         1,
-        14,
+        16,
         null,
         null,
         null
@@ -150,9 +172,18 @@
         null,
         null,
         1,
-        1,
+        2,
         0,
         null,
+        null,
+        null
+      ],
+      "/Users/jamesanderson/Turing/mod_3/apicurious/app/controllers/dashboard_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
         null,
         null
       ],
@@ -173,15 +204,6 @@
         0
       ],
       "/Users/jamesanderson/Turing/mod_3/apicurious/app/channels/application_cable/connection.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/jamesanderson/Turing/mod_3/apicurious/app/controllers/dashboard_controller.rb": [
-        0,
-        0,
-        0,
         0,
         0,
         0,
@@ -279,28 +301,6 @@
         0,
         0
       ],
-      "/Users/jamesanderson/Turing/mod_3/apicurious/app/models/received_event.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/jamesanderson/Turing/mod_3/apicurious/app/models/starred_repo.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
       "/Users/jamesanderson/Turing/mod_3/apicurious/app/services/github_oauth.rb": [
         0,
         0,
@@ -325,6 +325,6 @@
         0
       ]
     },
-    "timestamp": 1490307261
+    "timestamp": 1490308093
   }
 }
