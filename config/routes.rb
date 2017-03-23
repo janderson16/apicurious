@@ -3,9 +3,6 @@ Rails.application.routes.draw do
   get  '/dashboard', to: 'dashboard#show'
   get '/auth/github/callback', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
-  # get '/followers', to: 'followers#index'
-  # get '/following', to: 'following#index'
-  # get '/repos', to: 'repos#index'
 
   namespace :user, path: ':user' do
     get '/repos', to: 'repos#index'
@@ -14,6 +11,6 @@ Rails.application.routes.draw do
     get '/starred', to: 'starred_repos#index'
     get '/followers', to: 'followers#index'
     get '/following', to: 'following#index'
-    get '/following_commits', to: 'commits#show'
+    get '/following_events', to: 'events#show'
   end
 end

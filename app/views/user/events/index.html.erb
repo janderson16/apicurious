@@ -1,1 +1,4 @@
-<%= @events %>
+<% @events.each do |event| %>
+<%= event.type %>
+<%= event.repo %>
+<% end %>
