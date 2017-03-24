@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-2 sidebar">
-      <ul class="nav nav-sidebar">
+    <div class="col-md-2 scrollspy sidebar">
+      <ul class="nav nav-sidebar affix-top" data-spy="affix">
         <li class="active"><%= link_to "My Repos", "/#{current_user.username}/repos" %><span class="sr-only">(current)</span></a></li>
         <li><%= link_to "My Recent Events", "/#{current_user.username}/events" %></a></li>
         <li><%= link_to "My Organizations", "/#{current_user.username}/organizations"%></a></li>

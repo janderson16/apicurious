@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'home#show'
-  get  '/dashboard', to: 'dashboard#show'
+  get  '/dashboard', to: 'dashboard#index'
   get '/auth/github/callback', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
 
