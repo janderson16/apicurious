@@ -8,16 +8,13 @@ describe GithubUser do
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(@current_user)
   end
 
-  describe '#all' do
-    it "returns all GithubUser" do
-      VCR.use_cassette("models/all_followers") do
+  describe '#initialize' do
+    it "creates a GithubUser" do
+      VCR.use_cassette("models/github_user") do
 
-        followers = Follower.all(@current_user)
-        follower  = followers.first
+        user = GithubUser.new(@current_user)
 
-        expect(followers.count).to eq(3)
-        expect(follower.class).to eq(Follower)
-        expect(follower.login).to eq('Carmer')
+        expect(user.class).to eq(GithubUser)
 
       end
     end

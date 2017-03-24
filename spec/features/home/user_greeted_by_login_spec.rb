@@ -16,7 +16,7 @@ describe "user is met by login" do
   scenario "when they try to access site unauthenticated" do
     VCR.use_cassette("features/deadend") do
 
-      visit "/dashboard"
+      visit "/janderson16/dashboard"
 
 
       expect(current_path).to eq('/')

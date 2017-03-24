@@ -4,6 +4,4 @@ class GithubUser < OpenStruct
   def initialize(current_user)
     @service ||=GithubService.new(current_user)
   end
-
-  
 end

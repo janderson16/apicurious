@@ -44,21 +44,19 @@
     -->
 
 
-				<div class="sidebar-wrapper">
-							<div class="logo">
-									<a href="/dashboard">
-										<img src="/assets/GitHub-Mark.png" height=50 width=50 />
-											<font color="black"><strong>APICurious</strong></font>
-									</a>
-							</div>
+		<div class="sidebar-wrapper">
+					<div class="logo">
+								<img src="/assets/GitHub-Mark.png" height=50 width=50 />
+									<font color="black"><strong>APICurious</strong></font>
+					</div>
 
-							<ul class="nav">
-								<li>
-									<div class="stuff">
-												<i class="pe-7s-user"></i>
-												<%= link_to "Dashboard", "/dashboard" %>
-											</div>
-								</li>
+					<ul class="nav">
+						<li>
+							<div class="stuff">
+										<i class="pe-7s-user"></i>
+										<%= link_to "Dashboard", "/#{current_user.username}/dashboard" %>
+									</div>
+						</li>
 									<li>
 										<div class="stuff">
 													<i class="pe-7s-user"></i>

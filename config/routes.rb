@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   root 'home#show'
-  get  '/dashboard', to: 'dashboard#index'
   get '/auth/github/callback', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
 
   namespace :user, path: ':user' do
+    get '/dashboard', to: 'dashboard#index'
     get '/repos', to: 'repos#index'
     get '/events', to: 'events#index'
     get '/organizations', to: 'organizations#index'

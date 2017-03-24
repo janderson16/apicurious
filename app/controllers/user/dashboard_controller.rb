@@ -1,7 +1,7 @@
-class DashboardController < ApplicationController
+class User::DashboardController < ApplicationController
   before_action :authorize!
 
-  def show
+  def index
     @github_user = GithubUser.new(current_user)
   end
 end
