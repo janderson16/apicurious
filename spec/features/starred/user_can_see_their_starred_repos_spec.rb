@@ -9,9 +9,9 @@ describe "user can see their starred repos" do
 
       visit "/#{current_user.username}/starred"
 
-      expect(page).to have_content("Total Starred Repos: 1")
-      expect(page).to have_content("Repo Name: lesson_plans")
       expect(page).to have_content("My Starred Repos")
+      expect(page).to have_content("lesson_plans")
+      expect(page).to have_content("turingschool")
     end
   end
 end

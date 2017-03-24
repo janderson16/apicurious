@@ -9,7 +9,7 @@ describe "user can see their organizations" do
 
       visit "/#{current_user.username}/organizations"
 
-      expect(page).to have_content("Total Organizations I'm In: 1")
+      expect(page).to have_content("Organizations I'm a part of: 1")
       expect(page).to have_content("APICuriousTest")
     end
   end

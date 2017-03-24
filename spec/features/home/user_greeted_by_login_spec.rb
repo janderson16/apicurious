@@ -16,8 +16,8 @@ describe "user is met by login" do
   scenario "when they try to access site unauthenticated" do
     VCR.use_cassette("features/deadend") do
 
-      visit "/"
-      click_link 'Dashboard'
+      visit "/dashboard"
+
 
       expect(current_path).to eq('/')
       expect(page).to have_content("Please Sign In")

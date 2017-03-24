@@ -9,8 +9,8 @@ describe "user can see their dashboard" do
 
       visit "/dashboard"
 
-      expect(page).to have_content("Username: janderson16")
-      expect(page).to have_content("Email: james.p.anderson16@gmail.com")
+      expect(page).to have_content("janderson16")
+      expect(page).to have_content("james.p.anderson16@gmail.com")
 
     end
   end

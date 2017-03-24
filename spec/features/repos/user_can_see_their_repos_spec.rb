@@ -11,7 +11,7 @@ describe "user can see their repos" do
 
       expect(page).to have_content("My Repos")
       expect(page).to have_content("advanced_enums")
-      expect(page).to have_content("Total Repos: 21")
+      expect(page).to have_content("My Repos: 21")
     end
   end
 end

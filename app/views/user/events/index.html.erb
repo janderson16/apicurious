@@ -156,6 +156,7 @@
                                   </tr>
                                   <% @events.each do |event| %>
                                     <tr>
+																			<%#= binding.pry %>
 																				<td><%= event.type %></td>
                                         <td><%= event.repo[:name] %></td>
 																				<td><%= event.created_at.to_datetime.strftime("%d %b %Y") %></td>
