@@ -186,10 +186,12 @@
                                   </tr>
                                   <% @events.each do |event| %>
                                     <tr>
-                                        <td><%= event.type %></td>
+																				<td><%= event.type %></td>
                                         <td><%= event.repo[:name] %></td>
                                         <td><%= event.actor[:login] %></td>
-                                        <td><%#= event.payload[:commits] %></td>
+                                        <td><%= event.type == "PushEvent" ?
+																				event.payload[:commits][0][:message] : event.payload[:issue][:title] %>
+																			</td>
                                     </tr>
                                     <% end %>
                                 </tbody>
