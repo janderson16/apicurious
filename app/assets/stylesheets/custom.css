@@ -1,0 +1,12 @@
+.stuff {
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "Roboto","Helvetica Neue", Arial, sans-serif;
+}
+.stuff:hover {
+  background-color: grey;
+  box-sizing: border-box;
+}

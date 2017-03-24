@@ -58,12 +58,12 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li class="active"><%= link_to "My Repos", "/#{current_user.username}/repos" %><span class="sr-only">(current)</span></a></li>
-            <li><%= link_to "My Recent Events", "/#{current_user.username}/events" %></a></li>
-            <li><%= link_to "My Organizations", "/#{current_user.username}/organizations"%></a></li>
-            <li><%= link_to "Starred Repos", "/#{current_user.username}/starred" %></a></li>
-            <li><%= link_to "Followers: #{current_user.followers}", "/#{current_user.username}/followers" %></a></li>
-            <li><%= link_to "Following: #{ current_user.following}", "/#{current_user.username}/following" %></a></li>
-            <li><%= link_to "Their recent activity", "/#{current_user.username}/received_events"%></a></li>
+            <%= link_to "My Recent Events", "/#{current_user.username}/events" %></a><
+            <%= link_to "My Organizations", "/#{current_user.username}/organizations"%></a><
+            <%= link_to "Starred Repos", "/#{current_user.username}/starred" %></a><
+            <%= link_to "Followers: #{current_user.followers}", "/#{current_user.username}/followers" %></a><
+            <%= link_to "Following: #{ current_user.following}", "/#{current_user.username}/following" %></a><
+            <%= link_to "Their recent activity", "/#{current_user.username}/received_events"%></a></li>
           </ul>
         </div>
         <div class="col-md-3 main">
