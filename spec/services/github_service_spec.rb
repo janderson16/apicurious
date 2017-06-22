@@ -10,7 +10,6 @@ describe GithubService do
   end
 
   describe '#repos' do
-    # binding.pry
     it 'returns all repos' do
       VCR.use_cassette("services/all_repos") do
         repos = @service.repos
