@@ -1,4 +1,4 @@
-# PogHogs
+# APIcurious
 
 ## About the app
 
