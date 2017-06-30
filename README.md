@@ -2,7 +2,7 @@
 
 ## About the app
 
-APICurious is a personalized GitHub interface that provides users' with highlights reel of their GitHub activity without any of that pesky code. User's can access a list of their lastest commits, repositories, organizations, followers, people following them, as well as all GitHub activity for them. There's also a link to the real GitHub in case you feel like doing some actual work.
+APICurious is a personalized GitHub interface that provides users' with highlights reel of their GitHub activity without any of that pesky code. User's can access a list of their lastest commits, repositories, organizations, followers, people following them, as well as all GitHub activity for them. There's also a link to the real GitHub in case you feel like doing some actual work. It uses the Faraday gem to hit GitHub's API. It makes use of GitHub's OAuth service to log in and provide a user token that's attached to query parameters. A PostgreSQL database was used to store user data.
 
 [Production link](https://warm-ocean-46875.herokuapp.com/)
 
